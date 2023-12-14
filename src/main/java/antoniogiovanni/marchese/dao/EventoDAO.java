@@ -85,5 +85,9 @@ public class EventoDAO {
         return gareDiAtleticaPerPartecipante.getResultList();
     }
 
+    public List<Evento> getEventiSoldOut(){
+        TypedQuery<Evento> eventiSoldOut = em.createNamedQuery("getEventiSoldOut", Evento.class);
+        return eventiSoldOut.getResultList();
+    }
 
 }

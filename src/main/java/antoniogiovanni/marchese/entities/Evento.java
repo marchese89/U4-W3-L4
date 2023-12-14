@@ -9,6 +9,7 @@ import java.util.List;
 @Entity
 @Table(name = "eventi")
 @Inheritance(strategy = InheritanceType.JOINED)
+@NamedQuery(name = "getEventiSoldOut",query = "SELECT e FROM Evento e WHERE (SELECT COUNT(p) FROM Partecipazione p WHERE p.evento = e) = e.numeroMassimoPartecipanti")
 public class Evento {
     @Id
     @GeneratedValue

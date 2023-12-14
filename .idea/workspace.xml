@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05e1fbab-2617-40f3-af9a-b09ee6987ba8" name="Changes" comment="mancano gli extra">
+    <list default="true" id="05e1fbab-2617-40f3-af9a-b09ee6987ba8" name="Changes" comment="fatto qualche extra, ne mancano 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/dao/EventoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/dao/EventoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/GaraDiAtletica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/GaraDiAtletica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/PartitaDiCalcio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/PartitaDiCalcio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/Evento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +80,22 @@
       <option name="project" value="LOCAL" />
       <updated>1702563484934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fatto qualche extra, ne mancano 2">
+      <option name="closed" value="true" />
+      <created>1702565284265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702565284265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
     <MESSAGE value="mancano gli extra" />
-    <option name="LAST_COMMIT_MESSAGE" value="mancano gli extra" />
+    <MESSAGE value="fatto qualche extra, ne mancano 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fatto qualche extra, ne mancano 2" />
   </component>
 </project>

@@ -81,5 +81,10 @@ public class Application {
 
         System.out.println("----------------------------- GARE DI ATLETICA PER PARTECIPANTE -------------------------------");
         ed.getGareDiAtleticaPerPartecipante(pd.findById(7)).forEach(System.out::println);
+
+        System.out.println("--------------------------------- EVENTI SOLD OUT -----------------------------------");
+        Partecipazione partecipazione = new Partecipazione(pd.findById(7), ed.findById(6), StatoPartecipazione.CONFERMATA);
+        //ppd.save(partecipazione);
+        ed.getEventiSoldOut().forEach(System.out::println);
     }
 }
