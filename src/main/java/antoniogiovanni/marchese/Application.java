@@ -86,5 +86,8 @@ public class Application {
         Partecipazione partecipazione = new Partecipazione(pd.findById(7), ed.findById(6), StatoPartecipazione.CONFERMATA);
         //ppd.save(partecipazione);
         ed.getEventiSoldOut().forEach(System.out::println);
+
+        System.out.println("--------------------------- PARTECIPAZIONI DA CONFERMARE PER EVENTO -----------------------");
+        ppd.getPartecipazioniDaConfermarePerEvento(ed.findById(6)).forEach(System.out::println);
     }
 }

@@ -5,6 +5,8 @@ import antoniogiovanni.marchese.entities.Partecipazione;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 public class PartecipazioneDAO {
     private final EntityManager em;
@@ -40,5 +42,11 @@ public class PartecipazioneDAO {
         }
 
 
+    }
+
+    public List<Partecipazione> getPartecipazioniDaConfermarePerEvento(Evento evento){
+        TypedQuery<Partecipazione> getPartecipazioni = em.createNamedQuery("getPartecipazioniDaConfermarePerEvento", Partecipazione.class);
+        getPartecipazioni.setParameter("evento",evento);
+        return getPartecipazioni.getResultList();
     }
 }

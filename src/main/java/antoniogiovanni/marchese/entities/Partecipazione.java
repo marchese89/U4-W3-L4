@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@NamedQuery(name = "getPartecipazioniDaConfermarePerEvento",query = "SELECT p FROM Partecipazione p WHERE p.statoPartecipazione = 'DA_CONFERMARE' AND p.evento = :evento")
 public class Partecipazione {
     @Id
     @GeneratedValue
@@ -15,6 +16,7 @@ public class Partecipazione {
     @JoinColumn(name = "evento_id", nullable = false)
     private Evento evento;
     @Column(name = "stato")
+    @Enumerated(EnumType.STRING)
     private StatoPartecipazione statoPartecipazione;
 
     public Partecipazione() {
