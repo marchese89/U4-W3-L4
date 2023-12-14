@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05e1fbab-2617-40f3-af9a-b09ee6987ba8" name="Changes" comment="fatto qualche extra, ne mancano 1">
+    <list default="true" id="05e1fbab-2617-40f3-af9a-b09ee6987ba8" name="Changes" comment="finito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/dao/PartecipazioneDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/dao/PartecipazioneDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/GaraDiAtletica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/GaraDiAtletica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/Partecipazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniogiovanni/marchese/entities/Partecipazione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702568731443</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finito">
+      <option name="closed" value="true" />
+      <created>1702573498707</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702573498707</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +111,7 @@
     <MESSAGE value="mancano gli extra" />
     <MESSAGE value="fatto qualche extra, ne mancano 2" />
     <MESSAGE value="fatto qualche extra, ne mancano 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fatto qualche extra, ne mancano 1" />
+    <MESSAGE value="finito" />
+    <option name="LAST_COMMIT_MESSAGE" value="finito" />
   </component>
 </project>
