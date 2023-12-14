@@ -58,8 +58,8 @@ public class Application {
 
         PartitaDiCalcio partitaDiCalcio = new PartitaDiCalcio("Partita di Calcio 1",LocalDate.now().plusMonths(2),"descrizione partita",TipoEvento.PUBBLICO,3000,"Samp","Torino");
         partitaDiCalcio.setGolSquadraDiCasa(3);
-        partitaDiCalcio.setGolSquadraOspite(4);
-        partitaDiCalcio.setSquadraVincente(partitaDiCalcio.getSquadraOspite());
+        partitaDiCalcio.setGolSquadraOspite(3);
+        partitaDiCalcio.setSquadraVincente(null);
         //ed.save(partitaDiCalcio);
         System.out.println("------------------------------ PARTITE VINTE IN CASA ---------------------");
         ed.getPartiteVinteInCasa().forEach(System.out::println);
@@ -67,5 +67,19 @@ public class Application {
         System.out.println("------------------------------ PARTITE VINTE IN TRASFERTA ---------------------");
 
         ed.getPartiteVinteInTrasferta().forEach(System.out::println);
+
+        System.out.println("------------------------------ PARTITE PAREGGIATE ---------------------");
+
+        ed.getPartitePareggiate().forEach(System.out::println);
+
+        //nuova gara di atletica
+
+        GaraDiAtletica garaDiAtletica = new GaraDiAtletica("Gara di atletica",LocalDate.now().plusWeeks(3),"descrizione gara",TipoEvento.PUBBLICO,90);
+        //ed.save(garaDiAtletica);
+        System.out.println("----------------------------- GARE DI ATLETICA PER VINCITORE -------------------------------");
+        ed.getGareDiAtleticaPerVincitore(pd.findById(7)).forEach(System.out::println);
+
+        System.out.println("----------------------------- GARE DI ATLETICA PER PARTECIPANTE -------------------------------");
+        ed.getGareDiAtleticaPerPartecipante(pd.findById(7)).forEach(System.out::println);
     }
 }

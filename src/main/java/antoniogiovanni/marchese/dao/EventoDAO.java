@@ -2,6 +2,7 @@ package antoniogiovanni.marchese.dao;
 
 import antoniogiovanni.marchese.entities.Evento;
 import antoniogiovanni.marchese.entities.GenereConcerto;
+import antoniogiovanni.marchese.entities.Persona;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -65,4 +66,24 @@ public class EventoDAO {
         TypedQuery<Evento> getPartiteVinteInTrasferta = em.createNamedQuery("getPartiteVinteInTrasferta", Evento.class);
         return getPartiteVinteInTrasferta.getResultList();
     }
+
+
+    public List<Evento> getPartitePareggiate(){
+        TypedQuery<Evento> partitePareggiate = em.createNamedQuery("getPartitePareggiate", Evento.class);
+        return partitePareggiate.getResultList();
+    }
+
+    public List<Evento> getGareDiAtleticaPerVincitore(Persona vincitore){
+        TypedQuery<Evento> gareDiAtleticaPerVincitore = em.createNamedQuery("getGareDiAtleticaPerVincitore", Evento.class);
+        gareDiAtleticaPerVincitore.setParameter("vincitore",vincitore);
+        return gareDiAtleticaPerVincitore.getResultList();
+    }
+
+    public List<Evento> getGareDiAtleticaPerPartecipante(Persona partecipante){
+        TypedQuery<Evento> gareDiAtleticaPerPartecipante = em.createNamedQuery("getGareDiAtleticaPerPartecipante", Evento.class);
+        gareDiAtleticaPerPartecipante.setParameter("partecipante",partecipante);
+        return gareDiAtleticaPerPartecipante.getResultList();
+    }
+
+
 }
